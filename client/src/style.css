@@ -1,0 +1,50 @@
+:root {
+  --bg: #0f1420;
+  --bg-panel: #161d2c;
+  --bg-elev: #1c2436;
+  --bg-input: #0a0f1a;
+  --border: #26304a;
+  --text: #dfe6f3;
+  --text-dim: #8b96ae;
+  --accent: #4f8cff;
+  --accent-2: #7d5ce0;
+  --ok: #3fbf7f;
+  --err: #ff5d6c;
+  --warn: #ffb454;
+  --mono: "Cascadia Code", "JetBrains Mono", Consolas, "Courier New", monospace;
+  /* editor / code-block foregrounds (theme-aware) */
+  --editor-bg: #0a0f1a;
+  --editor-fg: #cfe0ff;
+  --editor-dim: #7f8db0;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg: #f5f7fb;
+  --bg-panel: #ffffff;
+  --bg-elev: #eef1f7;
+  --bg-input: #ffffff;
+  --border: #d6dce9;
+  --text: #1f2637;
+  --text-dim: #5c6680;
+  --accent: #2f6bdc;
+  --accent-2: #6a4fd0;
+  --ok: #1e9e6a;
+  --err: #d84552;
+  --warn: #c97a1e;
+  --editor-bg: #fbfcff;
+  --editor-fg: #1f2637;
+  --editor-dim: #5c6680;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  font-size: 13.5px;
+}
+code, pre, .mono { font-family: var(--mono); font-size: 12.5px; }
+
+#app { display: flex; flex-direction: column; }
