@@ -83,6 +83,21 @@ skills/          AI skill templates (folder-per-skill)
 scripts/         self-tests (npm test)
 ```
 
+## 🧰 Skills — global vs per-project
+Skills are **just folders of text** the AI reads. There are **two levels**, and they merge:
+
+- **Global skills** live in the repo's own `skills/` folder → available to **every** project.
+- **Project-local skills** live in a `skills/` folder **inside a project's folder** → available only for that project. New projects get a `skills/` folder created automatically.
+
+Rule: a local skill **overrides** a global one with the same name. Folder-per-skill structure:
+```
+skills/<skill-name>/skill.md
+```
+`skill.md`: the **first line** is the displayed name (e.g. `# Descriptive statistics`), the **rest** is the analysis playbook you want the AI to follow:
+- **Add** → make a new `skills/<name>/skill.md` (in the repo's `skills/` or a project's `skills/`).
+- **Remove** → delete that skill folder.
+- Refresh, and the AI window's **Skill** menu picks them up automatically.
+
 ## 🧪 Tests
 ```
 npm test          # self-test
