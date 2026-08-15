@@ -1,0 +1,36 @@
+{
+  "name": "r-analyzer",
+  "version": "0.1.0",
+  "description": "AI-assisted R statistical analysis workbench for clinical/biomedical research",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "build": "vite build --config client/vite.config.mjs",
+    "dev:server": "node server/index.js",
+    "dev:client": "vite --config client/vite.config.mjs",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "prestart": "npm run build",
+    "start": "node server/index.js",
+    "test": "node scripts/self-test.js",
+    "test:ai": "node scripts/test-ai.js",
+    "test:env": "node scripts/test-ai-env.js"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.10.4",
+    "@codemirror/language": "^6.12.4",
+    "@codemirror/legacy-modes": "^6.5.3",
+    "@codemirror/state": "^6.7.1",
+    "@codemirror/view": "^6.43.8",
+    "@fastify/static": "^7.0.4",
+    "codemirror": "^6.0.2",
+    "fastify": "^4.28.1",
+    "socket.io": "^4.8.1",
+    "vite": "^5.4.11",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "concurrently": "^9.1.0",
+    "socket.io-client": "^4.8.1"
+  }
+}
