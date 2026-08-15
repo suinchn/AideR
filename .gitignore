@@ -1,0 +1,32 @@
+# Dependencies / build
+node_modules/
+client/dist/
+
+# Local runtime config & logs (machine-specific R path / API keys)
+settings.json
+*.log
+
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.iml
+
+# Node
+npm-debug.log*
+yarn-error.log*
+
+# Runtime / generated output (clean examples; keep age_distribution.png for README)
+data/
+out/
+project/
+age_boxplot_baseR.png
+age_distribution_by_group.png
+nul
+*.Rplots.pdf
+
+# Dev tooling local settings
+.claude/
+.easier-code/
