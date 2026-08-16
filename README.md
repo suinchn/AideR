@@ -1,6 +1,6 @@
 # AideR — AI that actually runs your R
 
-> **🌐 [中文版介绍 / Chinese](README.zh-CN.md)**
+> **Version 1.0.0** · MIT · [中文版介绍 / Chinese](README.zh-CN.md)
 
 > A local R data-analysis workbench where the AI **writes code, runs it, reads the result, and keeps going** — block by block, in your live R session.
 
