@@ -61,6 +61,8 @@ npm start        # 构建前端并启动 → http://127.0.0.1:8787
 3. AI 自己拆块、运行、看图、给结论。
 4. 点「New Project」选个文件夹当工程，保存/记忆/技能都在那。
 
+![AideR 界面](Quicker_20260816_102502.png)
+
 ## ⚙️ 配置（`settings.json` / 界面「设置」）
 `ai.provider`（`ollama` 默认 / `custom` / `openai` / `groq` / `openrouter` / `anthropic` / `off`）、`ai.baseUrl`、`ai.apiKey`、`ai.model`、`rscript`（Rscript 路径）。
 
