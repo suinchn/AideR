@@ -1,8 +1,9 @@
 {
-  "name": "r-analyzer",
-  "version": "0.1.0",
-  "description": "AI-assisted R statistical analysis workbench for clinical/biomedical research",
+  "name": "aideR",
+  "version": "1.0.0",
+  "description": "AideR - a local R data-analysis workbench whose AI actually runs your R, block by block.",
   "type": "commonjs",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "vite build --config client/vite.config.mjs",
