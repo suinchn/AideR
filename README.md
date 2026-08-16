@@ -61,6 +61,8 @@ npm start        # builds frontend, starts server → http://127.0.0.1:8787
 3. The AI writes code, runs it block by block, and gives conclusions you can see.
 4. Click **New Project** to pick a folder — saves, memory, and skills all live there.
 
+![AideR interface](Quicker_20260816_102502.png)
+
 ## ⚙️ Config (`settings.json`)
 `ai.provider` (ollama default / custom / openai / groq / openrouter / anthropic / off), `ai.baseUrl`, `ai.apiKey`, `ai.model`, `rscript`. Also editable in **Settings**.
 
