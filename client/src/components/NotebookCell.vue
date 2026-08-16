@@ -219,9 +219,14 @@ onMounted(() => {
           lang.of(StreamLanguage.define(r)),
           syntaxHighlighting(R_HIGHLIGHT, { fallback: true }),
           autocompletion({ override: [rCompletionSource] }),
-          keymap.of([...defaultKeymap, ...historyKeymap, ...completionKeymap, {
-            key: 'Ctrl-Enter', run: () => { emitRunSel(); return true },
-          }]),
+          keymap.of([
+            { key: 'Ctrl-m', run: () => { view.dispatch(view.state.replaceSelection('%>%')); return true } },
+            { key: 'Ctrl-Shift-m', run: () => { view.dispatch(view.state.replaceSelection('%>%')); return true } },
+            { key: 'Ctrl-i', run: () => { view.dispatch(view.state.replaceSelection('<-')); return true } },
+            ...defaultKeymap, ...historyKeymap, ...completionKeymap, {
+              key: 'Ctrl-Enter', run: () => { emitRunSel(); return true },
+            },
+          ]),
           EditorView.updateListener.of((u) => {
             if (u.focusChanged && u.view.hasFocus) state.uiActiveEditorId = props.cell.id
             if (u.docChanged) {
