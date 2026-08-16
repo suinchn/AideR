@@ -1,5 +1,7 @@
 # AideR — AI that actually runs your R
 
+> **版本 1.0.0** · MIT · [English](README.md)
+
 > 一个**本地运行**的 R 数据分析工作台。它的 AI **不只是给建议，而是真的在你的 R 会话里写代码、运行、看结果，再继续**——逐块执行，看得见、摸得着。
 
 ![AideR 示例输出](age_distribution.png)
